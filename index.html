@@ -7,6 +7,9 @@
   <script src="https://kit.fontawesome.com/9650a62e47.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Personal Portfolio Webpage</title>
+  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
+  <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -21,8 +24,17 @@
       </ul>
     </nav>
     <div id="welcome-section" class="container">
+
       <h1 id="title">Welcome to my Portfolio</h1>
+    
       <p class="lead"><em>Henley Huang</em></p>
+    
+      <p id="quote">"The best way to predict the future is to build it."</p>
+      <div class="scroll-down">
+        <p>Scroll down to explore</p> 
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    
     </div>
   </header>
 
@@ -30,85 +42,72 @@
     <div class="container">
         <img src="img.jpg" alt="Image" class="about-image">
       <h2>About Me</h2>
-      <p>Hello! I'm Henley Huang, a passionate and driven student at DePaul University pursuing a degree in Software Development. I have previous experience as an automation analyst intern and a data science intern, which has given me valuable insights into these fields. I am deeply fascinated by the intersection of technology and data and thrive in solving complex problems using a data-driven approach. With a strong foundation in programming languages like Python, Java, and C++, I am eager to apply my technical skills to real-world projects. I am a proactive and collaborative team player with a solid understanding of data analysis techniques, machine learning algorithms, and statistical modeling. I am confident that my technical aptitude, combined with my previous internships, make me a strong candidate for software engineering, data science, data analytics, or automation analyst internships</p>
+      <p class ="about-text">Hello! I'm Henley Huang, a junior at DePaul University pursuing a BS in Software Development while maintaining a 4.0 GPA. Originally from Chicago, I'm passionate about leveraging technology to solve real-world problems. Through rigorous coursework and hands-on experiences, I've gained proficiency in languages like Python, Java, and JavaScript and become especially interested in building clean, modular applications.
+
+        As an Automation Analyst Intern, I led development of automation solutions with Python and React. I also collaborated on data analytics and machine learning projects during my Data Science Internship. These experiences helped me apply my skills in real-world environments.
+        
+        My goal is to obtain a software engineering or data science internship where I can continue to gain valuable hands-on experience. With my proven abilities, quick learning skills, and relentless work ethic, I am confident I will quickly add value as an intern. Please view my projects and get in touch - I'm excited to bring my passion for programming to make a positive impact through an internship role.</p>
     </div>
   </section>
   
 
   <!-- PROJECT SECTION -->
-  <section id="projects">
-    <div class="project-tile">
-      <h1 id="caption">"These are some of my projects"</h1><br>
-      <div id="bottom-line"></div>
-      <div class="projects">
-        <div class="box">
-          <a target="_blank" href="https://freecodecamp-solutions.github.io/Build-A-Tribute-Page/">
-            <img src="img/project-1.JPG" alt="project-img" class="project-img">
-            <p>
-              <span class="code">&lt;</span>
-              Tribute Page
-              <span class="code">/&gt;</span>
-            </p>
-          </a>
-        </div>
+<!-- PROJECT SECTION -->
+<section id="projects">
+  <div class="project-tile">
+    <h1 id="caption">My Projects</h1><br>
+    <div id="bottom-line"></div>
+    <div class="projects">
+      <div class="box">
+        <a target="_blank" href="https://github.com/hhuang51/DnD-KanBan">
+          <img src="KanBanBoard2.png" alt="project-img" class="project-img">
+          <h3>
+            <span class="code">&lt;</span>
+            Task Management Web app
+            <span class="code">/&gt;</span>
+          </h3>
+          <p>This project is an interactive task management app powered by React and Chakra UI. It offers agile boards with drag-and-drop functionality for seamless project organization.
+             The app includes a built-in timer to track time per task, auto-saved to local storage. 
+             With a mobile-first responsive UI, swipe navigation, and light/dark theming, 
+             This project provides a user-friendly experience. 
+             The project showcases effective global state management using React Context API for smooth and intuitive task management.</p>  <!-- New text -->
+        </a>
+      </div>
+
 
         <div class="box">
-          <a target="_blank" href="https://freecodecamp-solutions.github.io/Personal-Portfolio-Webpage/" alt="project-img" class="project-img">
-            <img src="img/project-2.JPG" alt="project-img" class="project-img">
-            <p>
+          <a target="_blank" href="https://github.com/hhuang51/Ecommerce-Shop">
+            <img src="TechShoping.png" alt="project-img" class="project-img">
+            <h3>
               <span class="code">&lt;</span>
-              Personal Portfolio
+              E-Commerence Tech Shop
               <span class="code">/&gt;</span>
-            </p>
+            </h3>
+            <p>The Tech E-Commerce Shop is an innovative and dynamic project that showcases an interactive and real-time shopping cart management system. 
+              Built using React state hooks and context APIs, this web application offers seamless user experiences for managing a shopping cart. 
+              Users can effortlessly add or remove items, apply promotions and discounts, and witness the cart totals dynamically recalculating in real-time.</p>
           </a>
         </div>
 
         <div class="box">
           <a target="_blank" href="https://freecodecamp-solutions.github.io/Technical-Documentation-Page/">
-            <img src="img/project-3.JPG" alt="project-img" class="project-img">
-            <p>
+            <img src="Portfolioimg.png" alt="project-img" class="project-img">
+            <h3>
               <span class="code">&lt;</span>
-              Documentation Page
+              Personal Portfolio
               <span class="code">/&gt;</span>
+            </h3>
+            <p>
+              This responsive personal portfolio website provides an overview of skills, projects, and contact info. 
+              Built with HTML, CSS and JavaScript, it features smooth scrolling navigation and an engaging full-page layout. 
+              The About section includes an image and summary, while the Projects section showcases applications with toggling descriptions. 
+              The Contact section links to social profiles and resume. 
+              Designed for desktop and mobile, this portfolio aims to impress with clean code and a visually appealing, easy-to-navigate interface.
+
             </p>
           </a>
         </div>
 
-        <div target="_blank" class="box">
-          <a href="https://freecodecamp-solutions.github.io/Product-Landing-Page/">
-            <img src="img/project-4.JPG" alt="project-img" class="project-img">
-            <p>
-              <span class="code">&lt;</span>
-              Landing Page
-              <span class="code">/&gt;</span>
-            </p>
-          </a>
-        </div>
-
-        <div target="_blank" class="box">
-          <a href="https://sites.google.com/view/dev-afif/">
-            <img src="img/project-5.JPG" alt="project-img" class="project-img">
-            <p>
-              <span class="code">&lt;</span>
-              Personal Site
-              <span class="code">/&gt;</span>
-            </p>
-          </a>
-        </div>
-
-        <div target="_blank" class="box">
-          <a href="https://freecodecamp-solutions.github.io/Build-a-Survey-Form/">
-            <img src="img/project-6.JPG" alt="project-img" class="project-img">
-            <p>
-              <span class="code">&lt;</span>
-              Survey Form
-              <span class="code">/&gt;</span>
-            </p>
-          </a>
-        </div>
-      </div>
-      <a href="https://github.com/FreeCodeCamp-Solutions" class="btn">Show More</a>
-    </div>
   </section>
 
   <!-- CONTACT SECTION -->
@@ -121,18 +120,18 @@
             <i class="fab fa-linkedin fa-1x"></i>
             LinkedIn
           </a>
-          <a id="profile-link" target="_blank" href="https://www.example.com/resume.pdf">
+          <a id="profile-link" target="_blank" href="HHResume.pdf">
             <i class="fas fa-file fa-1x"></i>
             Resume
           </a>
-          <a target="_blank" href="https://github.com/yourusername">
+          <a target="_blank" href="https://github.com/hhuang51">
             <i class="fab fa-github fa-1x"></i>
             GitHub
           </a>
-          <a href="#">
+          <div>
             <i class="fas fa-envelope-open-text fa-1x"></i>
-            Mail
-          </a>
+            Mail: henleyquan2002@gmail.com
+          </div>
         </div>
       </div>
     </div>
